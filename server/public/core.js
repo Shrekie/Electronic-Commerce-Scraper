@@ -90,28 +90,4 @@ app.controller('chartController', function($scope, apiService) {
 
 app.controller('mainController', function($scope, $http, apiService) {
 
-    // var ctx = document.getElementById("myChart").getContext('2d');
-    // var myChart = new Chart(ctx, {
-    //     type: 'line',
-    //     data: {
-    //         labels: ["02/07/17", "03/07/17"],
-    //         datasets: [{
-    //             label: 'Dyr og utstyr',
-    //             data: [21284, 21362],
-    //             borderWidth: 1
-    //         }]
-    //     },
-    //     options: {
-    //         scales: {
-    //             yAxes: [{
-    //                 ticks: {
-    //                     beginAtZero:true
-    //                 }
-    //             }]
-    //         }
-    //     }
-    // });
-
-
-
 });
