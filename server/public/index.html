@@ -1,0 +1,58 @@
+<html ng-app="EECommerceS">
+    <head>
+
+        <!-- JQUERY -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- ANGULAR -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+
+        <!-- CHART -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+        <!-- CORE -->
+        <script src="core.js"></script>
+
+        <!-- META -->
+        <meta charset="utf-8">
+        <title>database-test</title>
+
+    </head>
+
+    <body ng-controller="mainController">
+
+        <div class="container fluid">
+
+            <nav class="navbar navbar-default">
+            <div class="container fluid">
+
+                <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                        Electronic Commerce Statistics
+                        </a>
+                </div>
+            
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Finn</a></li>
+                        <li><a href="#">Amazon</a></li>
+                        <li><a href="#">Ebay</a></li>
+                    </ul>
+                </div>
+
+            </nav> 
+
+            <div class="row" ng-controller="chartController">
+                <div ng-repeat="category in categories" class="col-md-4">
+                    <canvas id="{{category}}"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

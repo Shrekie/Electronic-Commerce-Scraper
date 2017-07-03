@@ -1,0 +1,20 @@
+{
+  "name": "ecc-s",
+  "version": "1.0.0",
+  "description": "Collects statistics about electronic commerce companies.",
+  "main": "/server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Lindauer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chart.js": "^2.6.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.10.8",
+    "request": "^2.81.0"
+  }
+}
