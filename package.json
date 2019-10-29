@@ -14,7 +14,7 @@
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.3",
     "mongodb": "^2.2.29",
-    "mongoose": "^4.10.8",
+    "mongoose": "^5.7.7",
     "request": "^2.81.0"
   }
 }
